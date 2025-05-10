@@ -74,3 +74,6 @@ footer {
     text-decoration-color: yellow;
 
 }
+main {
+    max-width: 1000px;
+}
