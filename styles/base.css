@@ -25,6 +25,7 @@ main {
     min-width: 600px;
     height: 930px;
     gap: 20px;
+    
 
 }
 nav {
@@ -85,24 +86,42 @@ footer {
 
 .card {
    
-    box-sizing: border-box; 
     border: 1px solid blue;
-    width: 100%;
-    padding: 1px;
+   
+    padding: 20px;
     align-items: start;
     border-radius: 6px;
     background-color: bisque;
+    gap: 10px;
+    box-sizing: border-box; 
+    
 }
 .card img {
-	
+	width: 200px;
+    height: auto;
 	
 	justify-content:start;
     align-items: start;
-    background-color: aquamarine;
+    
+    padding: 15px;
 }
 h2 {
     text-align: center;
     background-color: rgb(30, 161, 4);
-    border-radius: 6px;
+    border-radius: 6px 6px 0px 0px;
+    border-top: 2px;
     top: 0px;
+    width: 100%;
+}
+.navlist {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+navlist li a:hover {
+    border: 1px solid #fff;
+
+}
+navlist li {
+    flex: 1 1 100%;
 }
