@@ -115,20 +115,24 @@ h2 {
 .navlist {
     display:grid;
     justify-content:center;
-    top: 200px;
+    margin: 100px;
+    
 }
-navlist li a:hover {
-    border: 1px solid #fff;
+.navlist li a:hover {
+   color:  rgb(30, 161, 4);
    
 
 }
-navlist li {
+.navlist li {
     flex: 1 1 100%;
-    
+    padding: 5px;
+  
     
 }
-navlist li a {
+.navlist li a {
    align-items:  center;
+   font-size: 15px;
+   color: black;
 }
 .pic {
     width: 200px;
@@ -146,4 +150,7 @@ navlist li a {
 .abox {
     padding: 50px;
 
+}
+.mycolor {
+    color: black;
 }
