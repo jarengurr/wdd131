@@ -142,23 +142,23 @@ h3 {
     width: 200px;
     height: auto;
     float: right;
-    margin-right: 30px;
+    margin-right: 50px;
     margin-top: 40px;
 }
 .testone {
      display: grid;
      grid-template-columns: 50% auto;
-     grid-template-rows: 500px auto;
+     grid-template-rows: 300px auto;
      justify-self:stretch;
      
      height: 350px;
 }
 .abox {
     padding-left: 0;
-   padding-right: 60px;
+   padding-right: 70px;
     padding-top: 40px;
     padding-bottom: 0;
-  
+  background-color: aquamarine;
 }
 .abox2 {
     padding-left: 60px;
