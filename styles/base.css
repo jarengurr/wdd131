@@ -118,6 +118,7 @@ h3 {
     display:grid;
     justify-content:center;
     margin: 100px;
+    padding-right: 40px;
     
 }
 .navlist li a:hover {
@@ -140,6 +141,8 @@ h3 {
     width: 200px;
     height: auto;
     float: right;
+    margin-right: 30px;
+    margin-top: 20px;
 }
 .testone {
      display: grid;
