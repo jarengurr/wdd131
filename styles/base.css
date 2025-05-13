@@ -82,7 +82,7 @@ footer {
 
 .card {
    
-    box-sizing: border-box;
+    
     border: 1px solid blue;
    
     padding: 0px;
@@ -97,10 +97,10 @@ footer {
 	width: 200px;
     height: auto;
 	
-	justify-content:start;
+	
     align-items: center;
     
-    padding: 20px;
+    padding: 10px;
     padding-left: 130px;
 
 }
@@ -143,13 +143,13 @@ h3 {
     height: auto;
     float: right;
     margin-right: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .testone {
      display: grid;
      grid-template-columns: 50% auto;
      grid-template-rows: 300px auto;
-     justify-self:stretch;
+     
      
      height: 350px;
 }
