@@ -53,7 +53,8 @@ footer {
     background-color: black;
     text-align: center;
     top: 58px;
-    inline-size: 100%;
+    inline-size: 98.4%;
+}
 }
 .thehead {
     font-family: "Quicksand", sans-serif;
@@ -117,9 +118,9 @@ h3 {
 .navlist {
     display:grid;
     justify-content:center;
-   margin-right: 20px;
+   margin-right: 40px;
     margin-top: 225px;
-    padding-right: 00px;
+    padding-right: 20px;
     
 }
 .navlist li a:hover {
