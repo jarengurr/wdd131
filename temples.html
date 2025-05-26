@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,73 +9,121 @@
     <meta name="author" content="James Jaren Gurr">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
     <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
     <header>
-        <p>Temple Album</p>
+        
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+            <ul class="headnav" id="myheadnav">
 
+                <div class="headlink">
+                    
+                        <p class="maintxt">Temple Album</p>
+                        <div class="toplinks" id="thelinks1">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#old">Old</a></li>
+                            <li><a href="#new">New</a></li>
+                            <li><a href="#large">Large</a></li>
+                            <li><a href="#small">Small</a></li>
+                        </div>
+                    
+                <!--hambuger menu-->
+                    <div class="hmlink" id="unlink">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!--off screen menu-->
+                    <div class="links" id="thelinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#old">Old</a></li>
+                        <li><a href="#new">New</a></li>
+                        <li><a href="#large">Large</a></li>
+                        <li><a href="#small">Small</a></li>
+                    </div>
+                
+                
             </ul>
-            
+
         </nav>
     </header>
     <main>
-        <h1 class="numh1">Home</h1>   
-        <figure class="numfig">
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-         <figure>
-            <img src="images/images.jpg">
-            <figcaption>Salt Lake Temple</figcaption>
-        </figure>
-        
+        <h1 class="numh1">Home</h1>
+        <div class="list">
+            <div>
+                <figure class="numfig">
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/images.jpg">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+        </div>
 
-       
+
     </main>
-     <footer>
-        <p>© <span id="currentyear"></span>🌩 Jaren Gurr ☀ California</p>
-        <p>Last Modified:   <span id="lastModified"></span></p>
-     </footer>
+    <footer>
+        <p>© <span id="currentyear"></span>🌩 James Jaren Gurr ☀ California</p>
+        <p class="p2">Last Modified: <span id="lastModified"></span></p>
+    </footer>
 
-    
+
 </body>
+<!--<a href="javascript:void(0);" class=icon onclick="myfunction()"><i class="fa fa-bars"></i></a>
+-->
 </html>
