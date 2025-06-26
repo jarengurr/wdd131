@@ -187,3 +187,59 @@ main h1 {
         display: none;
         list-style-type: none;
     }
+body {
+    font-family: "Roboto", sans-serif;
+    color:black;
+     text-decoration: none;
+}
+
+header, main, footer {
+    /**/
+   
+    border: 1px solid #bbb;
+    color:black;
+    background-color: #e6f3ff;
+    
+}
+
+main {
+     display: grid;
+     grid-template-columns: 1fr;
+     text-decoration: none;
+    
+
+}
+
+footer {
+     background: black;
+    color:#eee;
+    height: 50px;
+    text-align: center;
+    grid-column: span 3;
+    padding: 20px;
+}
+main h1 {
+    
+    background-color: aqua;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    list-style-type: none;
+}
+nav ul li {
+    flex: 1  1 100%;
+    
+}
+
+
+nav ul li a {
+     text-decoration: none;
+}
+.numh1 {
+   
+}
+.numfig {
+   
+}
