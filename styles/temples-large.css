@@ -1,16 +1,28 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     header {
         background-color: #000;
         color: #fff;
     }
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-       
+    .toplinks {
+    display: flex;
+   }
+   
+    
+    
+    .hmlink {
+    display: none;
     }
-  nav ul {
     
-    flex-direction:column;
-  }
+   
 
+
+.list {
+   
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-content: space-between;
+     padding: 20px;
 }
+ 
+
     
+}
