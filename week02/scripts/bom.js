@@ -1,13 +1,11 @@
 
 
 
-
-
-buttonElement.addEventListener('click', () => {
-     const rndCol = `rgb(${23} ${55} ${255})`;
-    document.body.style.color = rndCol;
+buttonElement.addEventListener('click', function() {
+  // Code to execute when a key is released
 });
-   
+
+
 
 buttonElement.addEventListener('keyup', function() {
   // Code to execute when a key is released
