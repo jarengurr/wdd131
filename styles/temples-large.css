@@ -13,15 +13,16 @@
     display: none;
     }
     
-   
-
-
-.list {
-   
+  main {
+     display: grid;
      grid-template-columns: 1fr 1fr 1fr;
-     justify-content: space-between;
-     padding: 20px;
-}
+     text-decoration: none;
+    
+
+} 
+
+
+
  
 
     
@@ -32,7 +33,7 @@
         color: #fff;
     }
     main {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
        
     }
   nav ul {
