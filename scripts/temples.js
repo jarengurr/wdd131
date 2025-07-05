@@ -9,10 +9,11 @@ document.getElementById("lastModified").innerHTML = lmDate;
 
 
 
-const hamburg = document.querySelector(".hmlink");
-const screenmenu = document.querySelector(".links");
-
-hamburg.addEventListener("click", () => {
-    hamburg.classList.toggle("active");
-    screenmenu.classList.toggle("active");
-});
+function myFunction() {
+    var x = document.getElementById(".toplinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

@@ -14,44 +14,42 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
     <header>
-        
+
         <nav>
             <ul class="headnav" id="myheadnav">
 
                 <div class="headlink">
-                    
-                        <p class="maintxt">Temple Album</p>
-                        <div class="toplinks" id="thelinks1">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#old">Old</a></li>
-                            <li><a href="#new">New</a></li>
-                            <li><a href="#large">Large</a></li>
-                            <li><a href="#small">Small</a></li>
-                        </div>
-                    
-                <!--hambuger menu-->
                     <div class="hmlink" id="unlink">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <a href="javascript:void(0);" class="icon" onclick="myfunction()"><i class="fa fa-bars"></i></a>
                     </div>
-                </div>
-                <!--off screen menu-->
-                    <div class="links" id="thelinks">
+                    <p class="maintxt">Temple Album</p>
+                    <div class="toplinks" id="thelinks1">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#old">Old</a></li>
                         <li><a href="#new">New</a></li>
                         <li><a href="#large">Large</a></li>
                         <li><a href="#small">Small</a></li>
                     </div>
-                
-                
+
+                    <!--hambuger menu-->
+
+                </div>
+                <!--off screen menu-->
+                <div class="links" id="thelinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#old">Old</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#large">Large</a></li>
+                    <li><a href="#small">Small</a></li>
+                </div>
+
+
             </ul>
 
         </nav>
@@ -122,8 +120,10 @@
         <p class="p2">Last Modified: <span id="lastModified"></span></p>
     </footer>
 
-
+    <script src="scripts/temples.js" defer></script>
+    <!-- <script src="scripts/temples2.js" defer></script> -->
 </body>
 <!--<a href="javascript:void(0);" class=icon onclick="myfunction()"><i class="fa fa-bars"></i></a>
 -->
+
 </html>

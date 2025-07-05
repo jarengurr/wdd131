@@ -1,16 +1,14 @@
-
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     header {
         background-color: #c017174f;
         color: #fff;
     }
-    
-   .hmlink {
-    display: block;
-   }
-    
-        
+
+    .hmlink {
+        display: block;
+    }
+
+
 }
 
 body {
@@ -23,7 +21,7 @@ header,
 main,
 footer {
     /**/
-    
+
     border: 1px solid #bbb;
     color: black;
     background-color: #2973b9;
@@ -60,26 +58,28 @@ main h1 {
 
     background-color: aqua;
 }
+
 .toplinks {
     list-style-type: none;
 
 
-.toplinks li {
-    flex: 1 1 100%;
+    .toplinks li {
+        flex: 1 1 100%;
 
+    }
+
+    .toplinks a:hover {
+        border: 1px solid;
+    }
 }
 
-.toplinks a:hover {
-    border: 1px solid;
-}
-}
 .headham {
     list-style-type: none;
 }
 
 .toplinks a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
     padding: 10px;
 }
 
@@ -100,27 +100,19 @@ main h1 {
 
 
 
-.hmlink {
-    /*hambuger menu */
-    display: block;
-}
+.hmlink {}
 
 
 
-.hmlink {
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-}
+.hmlink {}
 
-.links span{
+.links span {
     height: 5px;
     width: 100%;
     background-color: rgb(64, 0, 255);
     border-radius: 25px;
     position: absolute;
-    
+
     transform: translate(-50%, -50%);
     transition: .3 ease;
 }
@@ -132,11 +124,9 @@ main h1 {
 .hmlink span:nth-child(3) {
     top: 75%;
 }
-.hmlink {
-   
-    color: rgb(230, 14, 14);
-    background-color: burlywood;
-}
+
+.hmlink {}
+
 .hmlink.active {
     right: 0;
 }
@@ -145,21 +135,24 @@ main h1 {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .hmlink.active span:nth-child(2) {
     opacity: 0;
 }
+
 .hmlink.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, 50%) rotate(-45deg);
 }
+
 .hmlink {
-    background-color: rgb(123, 128, 150);
+    /*background-color: rgb(123, 128, 150);
     height: 100vh;
     width: 100%;
     max-width: 450px;
     position: fixed;
     top: 0;
-    right:-450px;
+    right: -450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,23 +160,51 @@ main h1 {
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
+     /*hambuger menu 
+    display: block;
+     height: 200px;
+    width: 200px;
+    margin-left: auto;
+    position: relative;
+    
+    color: rgb(230, 14, 14);
+    background-color: burlywood;
+     display: block;
+     <a href="javascript:void(0);" class=icon onclick="myfunction()"><i class="fa fa-bars"></i></a>
+    padding: 1rem;
+    justify-content: space-evenly;*/
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    left: 80vw;
+    top: 10vh;
+    /* /*background: white; */
 }
+
+.hmlink a {
+    text-decoration: none;
+}
+
 .toplinks {
-        display: none;
-    }
+    display: none;
+}
 
-   
+.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
 .headlink {
-        display: flax;
+    display: flex;
 
-    }
+}
 
-.hmlink {
-        display: block;
-        padding: 1rem;
-        justify-content: space-evenly;
-    }
 .links {
-        display: none;
-        list-style-type: none;
-    }
+    display: none;
+    list-style-type: none;
+}

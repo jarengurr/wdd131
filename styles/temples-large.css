@@ -1,28 +1,29 @@
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
     header {
         background-color: #000;
         color: #fff;
     }
+
     .toplinks {
-    display: flex;
-   }
-   
-    
-    
-    .hmlink {
-    display: none;
+        display: flex;
     }
-    
-   
 
 
-.list {
-   
-     grid-template-columns: 1fr 1fr 1fr;
-     justify-content: space-between;
-     padding: 20px;
-}
- 
 
-    
+    .hmlink {
+        display: none;
+    }
+
+
+
+
+    .list {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
+
 }
