@@ -160,6 +160,7 @@ h3 {
     float: right;
     margin-right: 50px;
     margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 .testone {
@@ -199,6 +200,7 @@ h3 {
     display:block;
     grid-column: 1/span 4;
     font-family: "Quicksand", sans-serif;
+    font-weight: 600;
     font-size: 35px;
     color: white;
     padding: 1px;
