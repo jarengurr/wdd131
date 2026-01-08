@@ -150,10 +150,10 @@ h3 {
 
 }
 
-.starlist li a {
+.starlist a {
     align-items: center;
     font-size: 15px;
-    color: black;
+    /*color: black;*/
 }
 
 .pic {
@@ -193,7 +193,7 @@ h3 {
 }
 
 .mycolor {
-    color: black;
+    color: rgb(202, 16, 16);
 }
 
 
