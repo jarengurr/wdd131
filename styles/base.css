@@ -54,7 +54,7 @@ footer {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    /*background-color: black;*/
     text-align: center;
     top: 58px;
     width: 100%;
