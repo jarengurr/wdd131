@@ -75,7 +75,8 @@ footer {
 
 .headstar a {
     display: block;
-    
+    background-color: black;
+    color:white;
     padding: .75rem;
     text-decoration: none;
 }
