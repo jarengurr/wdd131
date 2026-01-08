@@ -124,6 +124,7 @@ h2 {
 
 h3 {
     text-align: center;
+    font-size: 25px;
 }
 
 .starlist {
@@ -195,9 +196,7 @@ h3 {
     color: black;
 }
 
-h3 {
-    font-size: 25px;
-}
+
 
 #course-title {
     display:block;
