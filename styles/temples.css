@@ -119,3 +119,6 @@ footer {
     padding: 20px;
 
 }
+nav {
+    display:flex;
+}
