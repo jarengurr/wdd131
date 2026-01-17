@@ -1,8 +1,6 @@
 @media screen and (max-width: 989px) {
    
 
-
-
 * {
     margin:0;
     padding:0;
@@ -33,17 +31,7 @@ h1 {
 header,main {
     margin: 0 auto;
 }
-header {
-    /**/
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 25px;
-    border: 1px solid #bbb;
-    color: black;
-    background-color: green;
-    flex-direction: column;
-   
-}
+
 
 
 nav a:hover {
@@ -109,7 +97,7 @@ footer p {
 #menu.show::before {
     content: "X";
 }
-}
+}/* end of media*/
 footer {
     background: black;
     color: #eee;
@@ -122,4 +110,17 @@ footer {
 nav ul {
     display:flex;
      text-decoration: none;
+}
+
+header {
+    /**/
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 25px;
+    border: 1px solid #bbb;
+    color: black;
+    background-color: rgb(54, 243, 54);
+    flex-direction: column;
+    text-decoration: none;
+   
 }

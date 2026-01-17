@@ -5,28 +5,19 @@
     }
 
 
-
-
-header {
-    /**/
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 25px;
-    border: 1px solid #bbb;
-    color: black;
-    background-color: green;
-    flex-direction: column;
-   
-}
 .navigate {
-    text-decoration: none;
+    
     flex-direction: row;
-    background-color: aqua;
+    background-color: rgb(165, 52, 81);
     justify-content: space-around;
     height: 50px;
+    text-decoration: none;
 }
 .navigate a {
      text-decoration: none;
+}
+.navigate li a {
+    text-decoration: none;
 }
 #menu {
     display:none;
@@ -47,6 +38,8 @@ main {
     grid-column: span 3;
     text-align: center;
 }
-
+a {
+    text-decoration: none;
+}
 
 }
