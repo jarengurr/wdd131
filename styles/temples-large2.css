@@ -1,0 +1,31 @@
+@media screen and (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fcf2f2;
+        color: #fff;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+        flex-direction: row;
+         
+    }
+
+    nav ul li {
+      
+        flex: 1 1 100%;
+    }
+    .navigate {
+        display: flex;
+    }
+    .navigate li {
+        display: block;
+        flex: 1 1 100%
+
+    }
+    .navigate a {
+        text-align: center;
+    }
+}

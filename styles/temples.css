@@ -1,0 +1,121 @@
+@media screen and (max-width: 989px) {
+   
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Lora, sans-serif;
+}
+
+main {
+   display: grid;
+   grid-template-columns:auto;
+   
+   justify-content: space-around;
+}
+
+h1 {
+    /*grid-column: 1 / span 3;
+    text-align: center;
+    gap:50px;*/
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header,main {
+    margin: 0 auto;
+}
+header {
+    /**/
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 25px;
+    border: 1px solid #bbb;
+    color: black;
+    background-color: green;
+    flex-direction: column;
+   
+}
+
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: blue;
+    color: black;
+}
+footer p {
+    padding: 0px;
+}
+
+.modfoot {
+    padding-bottom: 10px;
+}
+.name {
+    font-size: xx-large;
+}
+
+#menu {
+    display: block;
+    text-align: right;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size:50px;
+    color:black;
+}
+#menu::before {
+    content: "≡";
+   
+}
+#menu.open::before {
+    content: "X";
+}
+.navigate {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    text-decoration: none;
+}
+.navigate li {
+    display:none;
+
+}
+.navigate a {
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: left;
+    transition: 0.5s;
+    width: 100px;
+}
+.navigate a:hover,
+.navigate a:active {
+    color:aqua;
+    background-color: black;
+}
+.show li {
+    display:block;
+
+}
+#menu.show::before {
+    content: "X";
+}
+}
+footer {
+    background: black;
+    color: #eee;
+    height: 100px;
+    text-align: center;
+    grid-column: span 3;
+    padding: 20px;
+
+}

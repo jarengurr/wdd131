@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: grid;
+   grid-template-columns:1fr 1fr 1fr;
+   grid-template-rows: auto;
+   justify-content: center;
+}
+
+h1 {
+    /*grid-column: 1 / span 3;
+    text-align: center;
+    gap:50px;*/
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#menu {
+    display:block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+
+}
+
+#menu::before {
+    content: "≡";
+    
+}
+
+span {
+    color:black;
+}
+
+nav {
+    background-color: #36454f;
+}
+.navigate {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.navigate  li {
+    display: none;
+}
+.navigate a {
+    display: block;
+    color:#fff;
+    text-align: left;
+    padding: 1rem;
+    transition: 0.55s;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.navigate a:hover,
+.navigate a:active {
+    color:aliceblue;
+    background-color: #000;
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "X";
+}
+/*
+nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    list-style-type: none;
+    
+}
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   
+}*/
+header {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    box-shadow: 0 0 30px #333;
+}
+
+
+header,main {
+    margin: 0 auto;
+}
+
+
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: blue;
+    color: black;
+}
