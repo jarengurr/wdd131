@@ -1,20 +1,21 @@
 @media screen and (min-width: 990px) {
-    header {
-        background-color: #000;
-        color: #fff;
-    }
-
+   
 
 .navigate {
     
     flex-direction: row;
-    background-color: rgb(165, 52, 81);
+    background-color: rgb(54, 243, 54);
     justify-content: space-around;
     height: 50px;
     text-decoration: none;
+    color: rgb(14, 2, 2);
+    list-style: none;
+    font-size: 30px;
 }
 .navigate a {
      text-decoration: none;
+    
+
 }
 .navigate li a {
     text-decoration: none;
@@ -27,7 +28,8 @@ p {
 }
 .name {
     text-align: left;
-    font-size: xx-large;
+    padding-top: 30px;
+    font-size: 40px;
 }
 main {
     display: grid;
