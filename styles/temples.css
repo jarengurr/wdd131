@@ -119,6 +119,7 @@ footer {
     padding: 20px;
 
 }
-nav {
+nav ul {
     display:flex;
+     text-decoration: none;
 }

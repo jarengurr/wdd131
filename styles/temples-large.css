@@ -19,11 +19,14 @@ header {
    
 }
 .navigate {
-    display:flex;
+    text-decoration: none;
     flex-direction: row;
     background-color: aqua;
     justify-content: space-around;
     height: 50px;
+}
+.navigate a {
+     text-decoration: none;
 }
 #menu {
     display:none;
