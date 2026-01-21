@@ -12,7 +12,8 @@ main {
     grid-template-columns: 90%;/*60%;*/
     max-width:540px;
     margin: 0 auto;
-    
+    justify-content: space-around;
+    gap: 20px;
 }
 
 h1 {
@@ -134,5 +135,5 @@ figure img {
     color: green;
     width: 99%;
     height: auto;
-
+    justify-content: space-around;
 }
