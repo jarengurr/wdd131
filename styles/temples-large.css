@@ -1,7 +1,8 @@
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 1073px) {
     main {
-        grid-template-columns: 45% 45%;
-        justify-content: space-evenly;
+        grid-template-columns: 90% 90%;
+        justify-content: center;
+        gap: 20px;
     }
 
     .title {
@@ -30,7 +31,7 @@
     }
     .navigate li {
         display:block;
-        flex: 1 1 100%;
+        flex: 1 1 auto;
         
     }
     .navigate li a {
@@ -47,12 +48,18 @@
         background-color: brown;
         color:rgb(209, 17, 65);
     }
+    header {
+        padding: 20px;
+    }
+    .name {
+        padding: 0;
+    }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1500px) {
     main {
-        grid-template-columns: 30% 30% 30%;
-        justify-content: space-evenly;
+        grid-template-columns: 80% 80% 80%;
+        justify-content: center;
     }
 
     .title {
