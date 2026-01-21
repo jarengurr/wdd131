@@ -88,7 +88,7 @@ footer p {
 }
 .navigate a:hover,
 .navigate a:active {
-    color:rgb(226, 10, 39);
+    color:red;
     background-color:  rgb(54, 243, 54);
     justify-content: space-between;
     text-align: center;
