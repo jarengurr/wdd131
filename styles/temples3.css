@@ -1,27 +1,31 @@
+
+  @media screen and (MIN-width: 20px) { 
+
 * {
     margin:0;
-    padding:5px;
-    padding-left: 19px;
-    box-sizing: border-box;
+    padding:0;
+    
 }
-
 body {
     font-family: Lora, sans-serif;
 }
+
 main {
-    display: grid;
-    grid-template-columns: 60%;
-    justify-content: space-evenly;
+   display: grid;
+   grid-template-columns:1fr;
+   
+   justify-content: space-around;
 }
 
 h1 {
     /*grid-column: 1 / span 3;
     text-align: center;
     gap:50px;*/
-    
+    grid-column: span 1;
+    font-size: 1rem;
     padding: 1rem;
-    
-    color: #080101;
+    background-color: #f7f1f1;
+    color: #140202;
     text-align: center;
 }
 
@@ -29,9 +33,17 @@ header,main {
     margin: 0 auto;
 }
 
+
+
+nav a:hover {
+    text-decoration:aqua;
+    background-color: blue;
+    color: rgb(160, 31, 31);
+}
 footer p {
     padding: 0px;
 }
+
 .modfoot {
     padding-bottom: 10px;
 }
@@ -41,11 +53,10 @@ footer p {
 
 #menu {
     display: block;
-    text-decoration: none;
     text-align: right;
     font-weight: 700;
     font-style: italic;
-    text-align: right;
+    text-decoration: none;
     padding: 0.5rem 0.75rem;
     font-size:50px;
     color:black;
@@ -64,28 +75,25 @@ footer p {
     max-width: 560px;
     text-decoration: none;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 25;
     align-items: center;
 }
-
 .navigate li {
     display:none;
 
 }
 .navigate a {
     display: block;
-    
     text-decoration: none;
-    
+    padding: 0.75rem;
     text-align: left;
-    transition: 0.5s;
+   
     width: 10px;
 }
 .navigate a:hover,
 .navigate a:active {
-    color:rgb(226, 10, 39);
-    background-color:  rgb(54, 243, 54);
-    justify-content: space-between;
+    color:aqua;
+    background-color: black;
 }
 .show li {
     display:block;
@@ -94,7 +102,7 @@ footer p {
 #menu.show::before {
     content: "X";
 }
-
+}/* end of media*/
 footer {
     background: black;
     color: #eee;
@@ -106,7 +114,6 @@ footer {
 }
 nav ul {
     display:flex;
-    
      text-decoration: none;
 }
 
@@ -126,8 +133,14 @@ figcaption {
     text-align: center;
 }
 figure img {
-    color: green;
-    width: 100%;
-    height: auto;
+    justify-content: center;
+   max-width: 500px;
 
+}
+
+a {
+     text-decoration: none;
+}
+.title {
+    grid-column: 1;
 }

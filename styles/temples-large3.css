@@ -1,0 +1,55 @@
+@media screen and (min-width: 990px) {
+   
+
+.navigate {
+    
+    flex-direction: row;
+    background-color: rgb(54, 243, 54);
+    justify-content: space-around;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(14, 2, 2);
+    list-style: none;
+    font-size: 30px;
+}
+.navigate a {
+     text-decoration: none;
+    
+
+}
+.navigate li a {
+    text-decoration: none;
+}
+#menu {
+    display:none;
+}
+p {
+    text-align: center;
+}
+.name {
+    text-align: left;
+    padding-top: 30px;
+    font-size: 40px;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.title {
+    grid-column: span 3;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+}
+
+@media screen and (max-width: 989px) and (min-width: 501) {
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+}

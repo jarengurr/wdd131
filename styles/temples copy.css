@@ -1,7 +1,6 @@
 * {
     margin:0;
-    padding:5px;
-    padding-left: 19px;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -10,25 +9,29 @@ body {
 }
 main {
     display: grid;
-    grid-template-columns: 60%;
-    justify-content: space-evenly;
+    grid-template-columns: auto;
+    justify-content: center;
 }
 
 h1 {
     /*grid-column: 1 / span 3;
     text-align: center;
     gap:50px;*/
-    
+    font-size: 1rem;
     padding: 1rem;
-    
-    color: #080101;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
 
 header,main {
     margin: 0 auto;
 }
-
+nav a:hover {
+    text-decoration: underline double;
+    background-color: blue;
+    color: black;
+}
 footer p {
     padding: 0px;
 }
@@ -41,11 +44,10 @@ footer p {
 
 #menu {
     display: block;
-    text-decoration: none;
     text-align: right;
     font-weight: 700;
     font-style: italic;
-    text-align: right;
+    text-decoration: none;
     padding: 0.5rem 0.75rem;
     font-size:50px;
     color:black;
@@ -64,28 +66,25 @@ footer p {
     max-width: 560px;
     text-decoration: none;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 25;
     align-items: center;
 }
-
 .navigate li {
     display:none;
 
 }
 .navigate a {
     display: block;
-    
     text-decoration: none;
-    
+    padding: 0.75rem;
     text-align: left;
     transition: 0.5s;
     width: 10px;
 }
 .navigate a:hover,
 .navigate a:active {
-    color:rgb(226, 10, 39);
-    background-color:  rgb(54, 243, 54);
-    justify-content: space-between;
+    color:aqua;
+    background-color: black;
 }
 .show li {
     display:block;
@@ -106,7 +105,6 @@ footer {
 }
 nav ul {
     display:flex;
-    
      text-decoration: none;
 }
 
@@ -124,10 +122,4 @@ header {
 }
 figcaption {
     text-align: center;
-}
-figure img {
-    color: green;
-    width: 100%;
-    height: auto;
-
 }
