@@ -9,7 +9,7 @@ body {
 }
 main {
     display: grid;
-    grid-template-columns: 90%;/*60%;*/
+    grid-template-columns: 70%;/*60%;*/
     max-width:540px;
     margin: 0 auto;
     justify-content: space-around;

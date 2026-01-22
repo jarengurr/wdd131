@@ -24,6 +24,9 @@
         color: black;
 
     }
+    .active::before {
+    content: "📍";
+    }
     .navigate a {
         text-align: right;
         justify-content: space-between;

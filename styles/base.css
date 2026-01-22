@@ -38,7 +38,9 @@ nav {
 
 }
 
-
+span {
+    span {background-color: red}
+}
 
 footer {
     background: black;
