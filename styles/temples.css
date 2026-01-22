@@ -137,3 +137,6 @@ figure img {
     height: auto;
     justify-content: space-around;
 }
+.active::before {
+    content: "📍";
+    }
