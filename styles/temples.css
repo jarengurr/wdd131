@@ -43,7 +43,7 @@ footer p {
     padding-left: 20px;
 }
 
-#menu {
+#menu1 {
     display:block;
     text-decoration: none;
     font-weight: 700;
@@ -54,11 +54,11 @@ footer p {
     color:black;
     
 }
-#menu::before {
+#menu1::before {
     content: "≡";
    
 }
-#menu.open::before {
+#menu1.open::before {
     content: "X";
 }
 .navigate {
@@ -97,7 +97,7 @@ footer p {
     display:block;
 
 }
-#menu.show::before {
+#menu1.show::before {
     content: "X";
 }
 

@@ -7,10 +7,10 @@ year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 let lmDate = document.lastModified
 document.getElementById("lastModified").innerHTML = lmDate;
 // menu setup
-const mybutton = document.querySelector("#menu");
+const mybutton = document.querySelector("#menu1");
 const mynavigation = document.querySelector(".navigate")
 
 mybutton.addEventListener("click", () => {
-    mynavigation.classList.toggle("show");
-    mybutton.classList.toggle("show");
+    mynavigation.classList.toggle("open");
+    mybutton.classList.toggle("open");
 });

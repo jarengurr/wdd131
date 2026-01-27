@@ -1,0 +1,66 @@
+
+:root {
+    --bord: 1px solid #777;
+}
+
+.name {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 10px;
+    background-color: burlywood;
+}
+footer {
+
+    background: black;
+
+    color: #eee;
+
+    min-height: 100px;
+
+    text-align: center;
+
+    grid-column: span 3;
+
+    padding: 20px;
+
+}
+main {
+     box-sizing: border-box;
+     
+    
+}
+main img {
+    width: 100%;
+    height: auto;
+
+}
+ul {
+    justify-content: center;
+}
+.Countrydata {
+    width: 200px;
+     text-align: center;
+     padding: 10px;
+     border: 2px solid black;
+}
+.row {
+    text-align: center;
+     padding: 10px;
+}
+h2 {
+    text-align: center;
+}
+weather {
+    border: 1px solid black);
+}
