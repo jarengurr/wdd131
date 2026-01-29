@@ -1,8 +1,10 @@
 
 :root {
-    --bord: 1px solid #777;
+    --bord: 5px solid #777;
 }
-
+* {
+    box-sizing: border-box;
+}
 .name {
     text-align: center;
     color: black;
@@ -18,7 +20,8 @@ header {
     grid-template-columns: 1fr;
     align-items: center;
     padding: 10px;
-    background-color: burlywood;
+   
+    background-color: rgb(85, 118, 179);
 }
 footer {
 
@@ -51,20 +54,106 @@ ul {
 .Countrydata {
     width: 200px;
      text-align: center;
-     padding: 10px;
-     border: 2px solid black;
+     padding-left: 40px;
+     
+     justify-content: center;
 }
+
 .row {
-    text-align: center;
-     padding: 10px;
-}
-h2 {
-    text-align: center;
-}
-weather {
-    border: 1px solid black;
-}
-#menu1::before {
-    content: "≡";
    
+    text-align: center;
+    padding: 10px;
+     justify-content: center;
 }
+div h2 {
+    
+    grid-column: span 2;
+    text-align: center;
+}
+.weather > div {
+      background-color:hsla(120,100%,75%,0.3);
+     color: #000;
+     padding: 10px;
+     font-size: 30px;
+     text-align: left;
+ }
+.weather {
+    display: none;
+    grid-template-columns: auto auto;
+    width: 350px;
+     text-align: left;
+     padding: 10px;
+     
+     justify-content: center;
+}
+
+.menu1 {
+    text-align: center;
+    justify-content: center;
+}
+
+.row img {
+    justify-content: center;
+}
+div img {
+   
+   width:60px;
+   height:auto;
+   justify-content: center;
+   padding-left: 15px;
+  
+}
+
+.col {
+	/*border-top: var(--bord);
+	border-left: var(--bord);*/
+	padding: 5px;
+    text-align: right;
+    font-weight: bold;
+}
+.col2 {
+    /*border-top: var(--bord);
+	border-left: var(--bord);*/
+	padding: 5px;
+    text-align: left;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 200px 200px;
+	align-items: center;
+	text-align: center;
+}
+.row1 {
+    display:grid;
+    grid-template-columns: 70x;
+    justify-content: center;
+    padding-left: 30px;
+}
+.row1 h2 {
+    padding-right: 30px;
+}
+
+.chartsp {
+     padding-top: 30px;
+     max-width: 550px;
+     padding-left: 20px;
+ }
+.weather {
+    background-color: none;
+    position: relative;
+    left: 40px;
+    bottom: 180px;
+    border: 3px solid #73AD21;
+   
+  }
+  hold {
+     grid-column: span 3;
+  }
+
+  @media screen and (min-width: 800px) {
+    header {
+        background-color: burlywood;
+    }
+
+  }
