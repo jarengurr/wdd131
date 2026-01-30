@@ -29,14 +29,14 @@ footer {
     color: #eee;
     min-height: 100px;
     text-align: center;
-   grid-column: span 3;
+     grid-column: span 3;
     padding: 20px;
 
 }
 main {
     display: flex;
     flex-direction: column;
-     box-sizing: border-box;
+     
      
 }
 main img {
@@ -199,7 +199,10 @@ main {
   .countrydata h2 {
     width:100%;
   }
-
+  picture {
+   margin: 0;
+  }
+  
 
 
    }
