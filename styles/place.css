@@ -26,81 +26,38 @@ header {
 footer {
 
     background: black;
-
     color: #eee;
-
     min-height: 100px;
-
     text-align: center;
-
-    grid-column: span 3;
-
+   grid-column: span 3;
     padding: 20px;
 
 }
 main {
+    display: flex;
+    flex-direction: column;
      box-sizing: border-box;
      
-    
 }
 main img {
     width: 100%;
     height: auto;
 
 }
-ul {
-    justify-content: center;
-}
-.Countrydata {
-    width: 200px;
-     text-align: center;
-     padding-left: 40px;
-     
-     justify-content: center;
-}
 
-.row {
-   
-    text-align: center;
-    padding: 10px;
-     justify-content: center;
-}
 div h2 {
     
     grid-column: span 2;
     text-align: center;
 }
-.weather > div {
-      background-color:hsla(120,100%,75%,0.3);
-     color: #000;
-     padding: 10px;
-     font-size: 30px;
-     text-align: left;
- }
-.weather {
-    display: none;
-    grid-template-columns: auto auto;
-    width: 350px;
-     text-align: left;
-     padding: 10px;
-     
-     justify-content: center;
-}
 
-.menu1 {
-    text-align: center;
-    justify-content: center;
-}
 
-.row img {
-    justify-content: center;
-}
 div img {
    
-   width:60px;
+   width:80px;
    height:auto;
    justify-content: center;
-   padding-left: 15px;
+   padding-left: 8px;
   
 }
 
@@ -121,12 +78,15 @@ div img {
 .row {
 	display: grid;
 	grid-template-columns: 200px 200px;
+     text-align: center;
+    
+    justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 .row1 {
     display:grid;
-    grid-template-columns: 70x;
+    
     justify-content: center;
     padding-left: 30px;
 }
@@ -134,26 +94,113 @@ div img {
     padding-right: 30px;
 }
 
-.chartsp {
-     padding-top: 30px;
-     max-width: 550px;
-     padding-left: 20px;
- }
-.weather {
-    background-color: none;
-    position: relative;
-    left: 40px;
-    bottom: 180px;
-    border: 3px solid #73AD21;
-   
-  }
-  hold {
-     grid-column: span 3;
-  }
+
+  /*888888888*******************************************************************************************/ 
+  
+
 
   @media screen and (min-width: 800px) {
-    header {
+
+
+main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+.weather2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 260px;
+     text-align: left;
+     padding: 10px;
+     background-color: none;
+    position: relative;
+    left: 40px;
+    bottom: 900px;
+   
+     justify-content: center;
+}
+.weather2 > div {
+     background-color:hsla(85, 47%, 68%, .9);
+     color: #000;
+     padding: 5px;
+     font-size: 15px;
+     text-align: left;
+     
+ }
+
+ 
+  .weather2 .row1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+   
+  
+
+   header {
         background-color: burlywood;
     }
+   
 
+  .weather2 {
+    display: block;
   }
+
+ h2 {
+    background-color: antiquewhite;
+    column-span:2;
+ }
+  
+ main {
+        display: Grid;
+        grid-template-columns: 1fr;
+        
+    }
+ .row1 h2 {
+    flex: row;
+    padding-right: 0;
+ }
+ 
+  .countrydata {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 250px;
+     text-align: left;
+     padding: 10px;
+     
+     justify-content: center;
+}
+
+.countrydata > div {
+     background-color:hsla(85, 47%, 68%, .9);
+     color: #000;
+     padding: 5px;
+     font-size: 15px;
+     text-align: left;
+   
+ }
+
+  .countrydata {
+        display:block;
+        box-sizing: border-box;
+         background-color: none;
+    position: relative;
+    right: -77px;
+    bottom: 300px;
+   }
+ .countrydata .row1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items:baseline;
+  }
+   
+  .countrydata h2 {
+    width:100%;
+  }
+
+
+
+   }
+  
