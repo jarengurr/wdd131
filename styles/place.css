@@ -79,8 +79,6 @@ div img {
 .row {
     display: grid;
     grid-template-columns: 200px 200px;
-     text-align: center;
-   
     justify-content: center;
     align-items: center;
     text-align: center;
