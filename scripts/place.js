@@ -8,7 +8,7 @@ let lmDate = document.lastModified
 document.getElementById("lastModified").innerHTML = lmDate;
 
  let _temp = 40;//degrees f.
-    let _windspeed = 40;//mph
+ let _windspeed = 40;//mph
 
 function windchill(_temp, _windspeed) {
     //calculate windchill
@@ -19,9 +19,11 @@ function windchill(_temp, _windspeed) {
 
 }
 
+if (_temp <= 50 && _windspeed > 3){
+    let holdtemp = windchill(_temp, _windspeed);
+    holdtemp = holdtemp.toFixed(1);
+    let stringholdtemp = holdtemp.toString() +  "°F";
 
-let holdtemp = windchill(_temp, _windspeed);
-holdtemp = holdtemp.toFixed(1);
-let stringholdtemp = holdtemp.toString() +  "°F";
+    document.getElementById("wc").innerHTML = stringholdtemp;
 
-document.getElementById("wc").innerHTML = stringholdtemp;
+}
