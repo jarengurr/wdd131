@@ -7,3 +7,21 @@ year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 let lmDate = document.lastModified
 document.getElementById("lastModified").innerHTML = lmDate;
 
+ let _temp = 40;//degrees f.
+    let _windspeed = 40;//mph
+
+function windchill(_temp, _windspeed) {
+    //calculate windchill
+   
+
+    let _windch = 35.74 + (.6215 * _temp) - (35.75 * Math.pow(_windspeed, .16)) + (.4275 * _temp * Math.pow(_windspeed, .16));
+    return _windch;
+
+}
+
+
+let holdtemp = windchill(_temp, _windspeed);
+holdtemp = holdtemp.toFixed(1);
+let stringholdtemp = holdtemp.toString() +  "°F";
+
+document.getElementById("wc").innerHTML = stringholdtemp;
