@@ -1,0 +1,28 @@
+table, th, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+  padding: 5px;
+}
+
+table {
+    width:400px;
+}
+tbody tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+thead {
+    color: white;
+    background-color: black;
+}
+tbody {
+     text-align: center;
+}
+#cap {
+    caption-side: bottom;
+}
+td {
+    font-size: 20px;
+    font-style: bold;
+    
+   padding: 10px;
+}

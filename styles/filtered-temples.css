@@ -8,9 +8,9 @@ body {
     font-family: Lora, sans-serif;
 }
 main {
-    /* display: grid; */
-    grid-template-columns: 1fr 1fr;
-    max-width:540px;
+    display: grid;
+    grid-template-columns: 1fr 1 1fr;
+    
     margin: 0 auto;
     justify-content: space-around;
     gap: 20px;
@@ -42,7 +42,6 @@ footer p {
     padding-top: 20px;
     padding-left: 20px;
 }
-
 
 #menu1 {
     display:block;
@@ -129,15 +128,51 @@ header {
     text-decoration: none;
    
 }
-figcaption {
-    text-align: center;
+
+main {
+  /*   display: grid;
+   
+    grid-template: 1fr;
+     justify-content: space-around;
+     margin:0 auto;  
+     gap:20px; */
+   
 }
-figure img {
-    color: green;
-    width: 99%;
-    height: auto;
+section {
+    height: 350px;
+    width: 400px;
+    background-color: aqua;
     justify-content: space-around;
+   text-align: center;
+    gap:30px;
+    padding: 20px;
 }
+
+section img {
+   width: 300px;
+   height: auto;
+   max-height: 350px;
+   padding-top: 30px;
+  
+}
+section p {
+    padding: 0px;
+    /*not needed*/
+}
+h3 {
+    padding: 10px;
+    padding-top: 10px;
+}
+
 .active::before {
     content: "📍";
     }
+
+.picklist section {
+    
+}
+div section {
+   display: grid;
+    grid-template: 1fr; 
+    /* justify-content: space-around; */
+} */
