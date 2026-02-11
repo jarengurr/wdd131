@@ -85,6 +85,11 @@ mybutton.addEventListener("click", () => {
     mybutton.classList.toggle("show");
 });
 
+//const old = temples.filter((temple) =>)
+function afilter() {
+     
+        return 25;
+    }
 
 createTempleCard();
 
@@ -116,7 +121,7 @@ function createTempleCard() {
 
     }
         
-    
+   
 
 
 )}
