@@ -25,6 +25,15 @@ const products = [
     averagerating: 5.0
   }
 ]; 
+
+const year = document.querySelector("#currentyear");
+const today1 = new Date();
+year.innerHTML = `<span class="highlight">${today1.getFullYear()}</span>`;
+//alert(document.lastModified);
+// returns: Tuesday, December 16, 2017 11:09:42
+//let oLastModif = new Date(document.lastModified)
+let lmDate = document.lastModified
+document.getElementById("lastModified").innerHTML = lmDate;
 const today = new Date(Date.now());   
 //today.setFullYear(2026, 1, 14)
 createOption();

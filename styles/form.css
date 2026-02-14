@@ -12,7 +12,7 @@ form {
     max-width: 500px;
 }
 #thedate input {
-    width: 350px;
+    width: 500px;
     height: 30px;
 }
 #thedate  {
@@ -37,4 +37,20 @@ form {
 } 
 input {
     padding: 10px;
+}
+footer {
+    background: black;
+    color: #eee;
+    height: 100px;
+    text-align: center;
+    grid-column: span 2;
+    padding: 20px;
+    position: absolute;
+    left: 10px;
+    top: 550px;
+    width:500px;
+
+}
+footer p {
+    padding: 0px;
 }
