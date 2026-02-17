@@ -1,0 +1,139 @@
+@media screen and (min-width: 1073px) {
+    
+
+    
+     .piclist {
+       
+        display: grid;
+         grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+         height: 350px;
+        width: 400px;
+        /*  background-color: burlywood; */
+         gap: 20px;
+    }
+
+    footer {
+        padding-top: 20px;
+        position: relative;
+        top: 1000px;
+    }
+ 
+    .title {
+        grid-column: span 2;
+        text-align:center;
+    }
+    nav ul li {
+        justify-content: right;
+    }
+    nav li a {
+        display: none;
+    }
+    .navigate {
+        text-decoration: none;
+        flex-direction: row;
+        background-color: rgb(54, 243, 54);
+        justify-content: space-evenly;
+        font-size: 20px;
+        color: black;
+
+    }
+    .active::before {
+    content: "📍";
+    }
+    .navigate a {
+        text-align: right;
+        justify-content: space-between;
+        color: black;
+    }
+    .navigate li {
+        display:block;
+        flex: 1 1 auto;
+        
+    }
+    .navigate li a {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #menu1 {
+        display: none;
+    }
+    nav li a:hover {
+        text-decoration: none;
+        
+        
+        color:red;
+    }
+    header {
+        padding: 20px;
+    }
+    .name {
+        padding: 0;
+    }
+   /*  main div {
+        /*  grid-template: 1fr 1fr; */
+       /*  flex-direction: row; 
+    } */
+}
+
+@media screen and (min-width: 1500px) {
+   
+
+    .title {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .navigate {
+        
+        flex-direction: row;
+        background-color: rgb(54, 243, 54);
+        grid-column: span 3;
+        justify-content: space-between;
+        font-size: 20px;
+        width: 100%;
+        color: black;
+
+    }
+    .navigate a {
+        text-align: right;
+        color: black;
+    }
+    .navigate li {
+        display:block;
+        flex: 1 1 100%;
+    }
+
+    #menu1 {
+        display: none;
+    }
+
+    
+    nav a:hover {
+        text-decoration: none;
+        
+        color:red;
+    }
+    .piclist {
+       
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 20px;
+         /* background-color: burlywood; */
+         justify-content: space-evenly;
+         padding-left: 200px;
+    }
+
+    footer {
+        padding-top: 20px;
+        position: relative;
+        top: 1400px;
+    }
+
+}   
+
+   
+    
+
+   

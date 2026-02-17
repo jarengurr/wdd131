@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="WDD 131-Dynamic Web Fundamentals, James Jaren Gurr, product review ">
+    <meta name="author" content="James Jaren Gurr">
+    <title>Product Review</title>
+     <link rel="stylesheet" href="styles/convert.css">
+      <link rel="stylesheet" href="styles/convert-large.css">
+     <script src="scripts/convert.js" defer></script>
+</head>
+<body>
+     <header>
+        <div class="name">Resistor Color Code Converter</div>
+        <a id="menu1" href="#"></a>
+        <nav>
+            
+            <ul class="navigate">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="resistors.html"> Resistor Overview</a></li>
+                <li><a href="resistortype.html">Resistors Types</a></li>
+                <li><a href="convert.html" class="active">Color Code Converter</a></li>
+                <li><a href="end.html">Review</a></li>
+            </ul>
+           
+            
+        </nav>
+             
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div class="theitems">
+                <label for="first">Choose First Color</label>
+                <select name="first" id="first" required></select>
+               
+            </div>
+             <div class="theitems">
+                <label for="second">Choose Second Color</label>
+                <select name="second" id="second" required></select>
+               
+            </div>
+            <div class="theitems">
+                <label for="times">Choose Third Color</label>
+                <select name="times" id="times" required></select>
+               
+            </div>
+
+            <button type="button" onclick="convertColor()">Try it</button>
+            <p id="demo">Hello</p>
+            <p id="demo2">Hello</p>
+            <p id="demo3">Hello</p>
+            <p id="demo4">Hello</p>
+            <p id="demo5">Hello</p>
+            <p id="demo8">Hello</p>
+             
+
+             <label for="answer">Resistor Value:</label><br>
+             <input type="text" id="answer" name="answer" size="40"><br>
+
+
+        </form>
+
+    </main>
+     <footer>
+        <p>© <span id="currentyear"></span> 🌩 James Jaren Gurr ☀ California</p>
+        <p class="modfoot">Last Modified: <span id="lastModified"></span></p>
+
+    </footer>
+</body>
+</html>
