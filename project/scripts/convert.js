@@ -240,7 +240,7 @@ function convertColor() {
     fullColorNumber = Number(holdStringNumber) * firstTimes;
 
     document.getElementById("demo5").innerHTML = fullColorNumber;
-    let holdStringOutput = `Your Resistor Value is ${fullColorNumber}`;
+    let holdStringOutput = `Your Resistor Value is ${fullColorNumber} ohms`;
     //document.getElementById("demo6").innerHTML = holdStringOutput;
 
     let holder = document.createElement("section")
@@ -257,12 +257,18 @@ trackVisits();
 function trackVisits() {
     let hold = 0;
     let count = localStorage.getItem("myCount")
+    if (Number(count)) {
+        hold = Number(count);
+    } else {
+         hold = 0;
+
+    }
     
-    hold = Number(count);
     
     hold = hold + 1;
-    count = toString(hold).count;
+   
    
     document.getElementById("demo8").innerHTML = hold;
     localStorage.setItem("myCount", hold)
+    document.getElementById("visits").innerHTML = hold;
 }

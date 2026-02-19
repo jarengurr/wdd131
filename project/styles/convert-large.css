@@ -2,16 +2,16 @@
     
 
     
-     .piclist {
+     /* .piclist {
        
         display: grid;
          grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
          height: 350px;
         width: 400px;
-        /*  background-color: burlywood; */
+        /*  background-color: burlywood; 
          gap: 20px;
-    }
+    } */
 
     footer {
         padding-top: 20px;
@@ -133,6 +133,7 @@
         position: relative;
         top: 1400px;
     }
+ 
 
 }   
 

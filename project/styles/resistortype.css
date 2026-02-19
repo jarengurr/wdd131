@@ -9,10 +9,10 @@ body {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    
-    margin: 0 auto;
-    justify-content: space-around;
+    grid-template-columns: auto;
+    place-items: center;
+    margin: 10px auto;
+   /*  justify-content: space-around; */
     gap: 20px;
 }
 
@@ -167,4 +167,10 @@ h3 {
 .active::before {
     content: "📍";
     }
-
+.resistortype {
+    display:block;
+    background-color: rgb(158, 222, 118);
+    font-size: 30px;
+    padding:20px;
+    height:100%;
+}

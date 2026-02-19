@@ -1,7 +1,9 @@
 @media screen and (min-width: 1073px) {
     
 
-    
+    main {
+        grid-template-columns: auto auto;
+    }
      .piclist {
        
         display: grid;
@@ -16,7 +18,7 @@
     footer {
         padding-top: 20px;
         position: relative;
-        top: 1000px;
+        top: 30px;
     }
  
     .title {
@@ -115,21 +117,33 @@
         
         color:red;
     }
-    .piclist {
+   /*  .piclist {
        
          display: grid;
          grid-template-columns: repeat(3, 1fr);
          gap: 20px;
-         /* background-color: burlywood; */
+         /* background-color: burlywood; 
          justify-content: space-evenly;
          padding-left: 200px;
-    }
+    } */
 
     footer {
         padding-top: 20px;
         position: relative;
-        top: 1400px;
+        top: 10px;
     }
+
+.resistortype {
+    display:block;
+    background-color: rgb(158, 222, 118);
+    font-size: 30px;
+}
+figure {
+    background-color: rgb(189, 18, 64);
+    align-items: center;
+    height: auto;
+    width:auto;
+}
 
 }   
 
