@@ -168,3 +168,6 @@ h3 {
     content: "📍";
     }
 
+main p {
+    font-size: 40px;
+}

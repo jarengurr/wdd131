@@ -168,3 +168,10 @@ h3 {
     content: "📍";
     }
 
+.resistor {
+     display:block;
+    background-color: rgb(158, 222, 118);
+    font-size: 30px;
+   
+    height:100%;
+}

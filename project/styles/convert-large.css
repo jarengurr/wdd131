@@ -16,7 +16,7 @@
     footer {
         padding-top: 20px;
         position: relative;
-        top: 100px;
+        top: 10px;
     }
  
     .title {
@@ -72,7 +72,7 @@
         padding: 0;
     }
     main  {
-        grid-template: 1fr 1fr; 
+        /* grid-template-columns: 1fr 1fr; */ 
         flex-direction: row; 
     }
     form {
@@ -131,7 +131,7 @@
     footer {
         padding-top: 20px;
         position: relative;
-        top: 1400px;
+        top: 10px;
     }
  
 

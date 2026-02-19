@@ -21,7 +21,7 @@
                 <li><a href="resistors.html"> Resistor Overview</a></li>
                 <li><a href="resistortype.html">Resistors Types</a></li>
                 <li><a href="convert.html" class="active">Color Code Converter</a></li>
-                <li><a href="end.html">Review</a></li>
+               
             </ul>
            
             
@@ -32,31 +32,42 @@
         <form action="review.html" method="get">
             <div class="theitems">
                 <label for="first">Choose First Color</label>
-                <select name="first" id="first" required></select>
+                <select name="first" id="first" required>
+                     <option value="choose" disabled selected>Choose a Color</option>
+                </select>
                
             </div>
              <div class="theitems">
                 <label for="second">Choose Second Color</label>
-                <select name="second" id="second" required></select>
+                <select name="second" id="second" required>
+                    <option value="choose" disabled selected>Choose a Color</option>
+                </select>
                
             </div>
             <div class="theitems">
                 <label for="times">Choose Third Color</label>
-                <select name="times" id="times" required></select>
+                <select name="times" id="times" required>
+                     <option value="choose" disabled selected>Choose a Color</option>
+                </select>
                
             </div>
 
-            <button type="button" onclick="convertColor()">Try it</button>
-            <p id="demo">Hello</p>
-            <p id="demo2">Hello</p>
-            <p id="demo3">Hello</p>
-            <p id="demo4">Hello</p>
-            <p id="demo5">Hello</p>
-            <p id="demo8">Hello</p>
+             
+            <div class="theitems">
+                <label for="tol">Choose Fourth Color or None If Not Listed</label>
+                <select name="tol" id="tol" required>
+                     <option value="choose" disabled selected>Choose a Color</option>
+                </select>
+               
+            </div>
+
+            <button type="button" onclick="convertColor()">Calculate Resistance</button>
+           
+           
              
 
              <label for="answer">Resistor Value:</label><br>
-             <input type="text" id="answer" name="answer" size="40"><br>
+             <input type="text" id="answer" name="answer" size="50"><br>
 
 
         </form>

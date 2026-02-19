@@ -158,37 +158,83 @@ const tolerance = [
     {
         tol: 20,
         name: "None",
-    }
+    },
+    
+    {
+        tol: 1,
+        name: "Brown",
+    },
+
+    {
+        tol: 2,
+        name: "Red",
+    },
+    
+    
+    {
+        tol: .5,
+        name: "Green",
+    },
+    {
+        tol: .25,
+        name: "Blue",
+    },
+    {
+        tol: .1,
+        name: "Violet",
+    },
+    {
+        tol: .05,
+        name: "Gray",
+    },
+    
+    {
+        tol: 5,
+        name: "Gold",
+    },
+    {
+        tol: 10,
+        name: "Silver",
+    },
+
 ]
 
+document.addEventListener("DOMContentLoaded", function() {
+    createFirst();
+    createSecond();
+    createTimes();
+    createTol();
+});
 
 
-createFirst();
 function createFirst() {
     first.forEach(first1 => {
-        let newOption = document.createElement("option");
-        newOption.setAttribute("value", first1.code);
-        newOption.setAttribute("id", first1.id);
-        newOption.textContent = first1.name;
-        document.querySelector("#first").appendChild(newOption);
+        let newOption1 = document.createElement("option");
+        newOption1.setAttribute("value", first1.code);
+        newOption1.setAttribute("id", first1.id);
+        newOption1.textContent = first1.name;
+        document.querySelector("#first").appendChild(newOption1);
                
     })
+    document.getElementById("#first").size = "11";
 }
 
 
-createSecond();
+
+
 function createSecond() {
     second.forEach(second2 => {
-        let newOption = document.createElement("option");
-        newOption.setAttribute("value", second2.code);
+        let newOption2 = document.createElement("option");
+        newOption2.setAttribute("value", second2.code);
         
-        newOption.textContent = second2.name;
-        document.querySelector("#second").appendChild(newOption);
+        newOption2.textContent = second2.name;
+        document.querySelector("#second").appendChild(newOption2);
                
     })
+    document.getElementById("#second").size = "11";
 }
 
-createTimes();
+
 function createTimes() {
     multiply.forEach(times1 => {
         let newOption = document.createElement("option");
@@ -198,6 +244,20 @@ function createTimes() {
         document.querySelector("#times").appendChild(newOption);
                
     })
+   document.getElementById("times").size = "12";
+}
+
+
+function createTol() {
+    tolerance.forEach(tol => {
+        let newOption = document.createElement("option");
+        newOption.setAttribute("value", tol.tol);
+        
+        newOption.textContent = tol.name;
+        document.querySelector("#tol").appendChild(newOption);
+               
+    })
+    document.getElementById("#tol").size = "9";
 }
 
        
@@ -226,21 +286,22 @@ function convertColor() {
     let stringNumber = "";
     let fullColorNumber = 0;
      const firstColor = document.getElementById("first").value;
-    document.getElementById("demo").innerHTML = firstColor;
+   // document.getElementById("demo").innerHTML = firstColor;
 
      const secondColor = document.getElementById("second").value;
-    document.getElementById("demo2").innerHTML = secondColor;
+    //document.getElementById("demo2").innerHTML = secondColor;
 
-     const firstTimes = document.getElementById("times").value;
-    document.getElementById("demo3").innerHTML = firstTimes;
+    const firstTimes = document.getElementById("times").value;
+    const firstTol = document.getElementById("tol").value;
+    //document.getElementById("demo3").innerHTML = firstTimes;
 
     let holdStringNumber = stringNumber.concat(firstColor, secondColor)
     //combine first color number and second color number
-    document.getElementById("demo4").innerHTML = holdStringNumber;
+    //document.getElementById("demo4").innerHTML = holdStringNumber;
     fullColorNumber = Number(holdStringNumber) * firstTimes;
 
-    document.getElementById("demo5").innerHTML = fullColorNumber;
-    let holdStringOutput = `Your Resistor Value is ${fullColorNumber} ohms`;
+    //document.getElementById("demo5").innerHTML = fullColorNumber;
+    let holdStringOutput = `Your Resistor Value is ${fullColorNumber} ohms with a Tolerance of ${firstTol}%`;
     //document.getElementById("demo6").innerHTML = holdStringOutput;
 
     let holder = document.createElement("section")
@@ -268,7 +329,7 @@ function trackVisits() {
     hold = hold + 1;
    
    
-    document.getElementById("demo8").innerHTML = hold;
+    //document.getElementById("demo8").innerHTML = hold;
     localStorage.setItem("myCount", hold)
     document.getElementById("visits").innerHTML = hold;
 }

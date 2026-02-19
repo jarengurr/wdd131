@@ -11,8 +11,9 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     
-    margin: 0 auto;
-    justify-content: space-around;
+    /* margin: 0 auto; */
+    justify-content: center;
+    place-items: center;
     gap: 20px;
 }
 
@@ -181,5 +182,11 @@ form {
 }
 button {
     height:30px;
-    width: 80px;
+    width: 180px;
+    margin-top: 10px;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    place-items: center;
 }

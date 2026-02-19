@@ -171,6 +171,9 @@ h3 {
     display:block;
     background-color: rgb(158, 222, 118);
     font-size: 30px;
-    padding:20px;
+   
     height:100%;
+}
+figcaption {
+    text-align: center;
 }
