@@ -200,23 +200,26 @@ const tolerance = [
 ]
 
 document.addEventListener("DOMContentLoaded", function() {
+   
+});
+window.onload = function() {
     createFirst();
     createSecond();
     createTimes();
     createTol();
-});
 
-
+} 
+   
 function createFirst() {
     first.forEach(first1 => {
-        let newOption1 = document.createElement("option");
+        const newOption1 = document.createElement("option");
         newOption1.setAttribute("value", first1.code);
         newOption1.setAttribute("id", first1.id);
         newOption1.textContent = first1.name;
         document.querySelector("#first").appendChild(newOption1);
                
     })
-    document.getElementById("#first").size = "11";
+    //document.getElementById("first").size = "11";
 }
 
 
@@ -226,35 +229,35 @@ function createSecond() {
     second.forEach(second2 => {
         let newOption2 = document.createElement("option");
         newOption2.setAttribute("value", second2.code);
-        
+        newOption2.setAttribute("id", "check");
         newOption2.textContent = second2.name;
         document.querySelector("#second").appendChild(newOption2);
                
     })
-    document.getElementById("#second").size = "11";
+    //document.getElementById("second").size = "12";
 }
 
 
 function createTimes() {
     multiply.forEach(times1 => {
-        let newOption = document.createElement("option");
-        newOption.setAttribute("value", times1.times);
+        let newOption3 = document.createElement("option");
+        newOption3.setAttribute("value", times1.times);
         
-        newOption.textContent = times1.name;
-        document.querySelector("#times").appendChild(newOption);
+        newOption3.textContent = times1.name;
+        document.querySelector("#times").appendChild(newOption3);
                
     })
-   document.getElementById("times").size = "12";
+   //document.getElementById("times").size = "13";
 }
 
 
 function createTol() {
     tolerance.forEach(tol => {
-        let newOption = document.createElement("option");
-        newOption.setAttribute("value", tol.tol);
+        let newOption4 = document.createElement("option");
+        newOption4.setAttribute("value", tol.tol);
         
-        newOption.textContent = tol.name;
-        document.querySelector("#tol").appendChild(newOption);
+        newOption4.textContent = tol.name;
+        document.querySelector("#tol").appendChild(newOption4);
                
     })
     document.getElementById("#tol").size = "9";
