@@ -260,7 +260,7 @@ function createTol() {
         document.querySelector("#tol").appendChild(newOption4);
                
     })
-    document.getElementById("#tol").size = "9";
+    //document.getElementById("tol").size = "9";
 }
 
        
