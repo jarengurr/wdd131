@@ -1,4 +1,4 @@
-const temples = [
+const churchtemples = [
     {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
@@ -84,17 +84,32 @@ mybutton.addEventListener("click", () => {
     mynavigation.classList.toggle("show");
     mybutton.classList.toggle("show");
 });
-
+mytemples = churchtemples;
 //const old = temples.filter((temple) =>)
-function afilter() {
+function testold() {
      
-        return 25;
-    }
+   mytemples = mytemples.filter(temple => temple.dedicated < 1900);
+    createTempleCard();
+}
+
+function testlarge() {
+    // let namesB = names.filter(name => name.charAt(0) === 'B');
+    
+    //document.querySelector(".piclist").removeChild();
+    
+    mytemples = mytemples.filter(temple => temple.area > 90000);
+    createTempleCard();
+}
+function testhome() {
+   // let namesB = names.filter(name => name.charAt(0) === 'B');
+    mytemples = mytemples;
+    createTempleCard();
+}
 
 createTempleCard();
 
 function createTempleCard() {
-    temples.forEach(temple =>{
+    mytemples.forEach(temple =>{
         let templecard = document.createElement("section");
         let templename = document.createElement("h3"); 
         let templelocation = document.createElement("p");

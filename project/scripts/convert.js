@@ -336,3 +336,4 @@ function trackVisits() {
     localStorage.setItem("myCount", hold)
     document.getElementById("visits").innerHTML = hold;
 }
+
